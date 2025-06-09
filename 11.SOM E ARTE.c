@@ -73,7 +73,7 @@ void cadastrarProduto() {
     scanf("%s", estoque[numvenda].nome);
     printf("Categoria do produto: ");
     scanf("%s", estoque[numvenda].banda);
-    printf("Valor do produto: ");
+    printf("genero do produto: ");
     scanf("%s", estoque[numvenda].genero);
     printf("Quantidade em estoque: ");
     scanf("%d", &estoque[numvenda].quantidade);
