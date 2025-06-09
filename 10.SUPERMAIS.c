@@ -48,7 +48,7 @@ int main() {
                 printf("Obrigado\n");
                 break;
             default:
-                printf("Opção inválida\n");
+                printf("Opção invalida\n");
                 break;
         }
 
@@ -103,7 +103,7 @@ void realizarCompra() {
     }
 
     if (produtoEncontrado == -1) {
-        printf("Produto com o ID %d não encontrado.\n", idProduto);
+        printf("Produto com o ID %d nao encontrado.\n", idProduto);
         return;
     }
 
@@ -111,7 +111,7 @@ void realizarCompra() {
     scanf("%d", &quantidadeCompra);
 
     if (quantidadeCompra > estoque[produtoEncontrado].quantidade) {
-        printf("Quantidade solicitada maior que o estoque disponível. Estoque atual: %d\n", estoque[produtoEncontrado].quantidade);
+        printf("Quantidade solicitada maior que o estoque disponivel. Estoque atual: %d\n", estoque[produtoEncontrado].quantidade);
     } else {
         estoque[produtoEncontrado].quantidade -= quantidadeCompra;
         printf("Compra realizada com sucesso! Quantidade restante no estoque: %d\n", estoque[produtoEncontrado].quantidade);
